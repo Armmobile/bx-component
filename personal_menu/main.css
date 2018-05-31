@@ -1,0 +1,41 @@
+/* personal_menu */
+
+.p-menu-box {
+    padding: 0;
+    background-color: #444;
+}
+
+
+/* Bitrix menu-component "Personal"-tpl */
+
+.p-menu {  }
+.p-menu__item {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 0.8em;
+    font-weight: 300;
+    padding: 9px 0 6px 0;
+}
+
+.p-menu__item.active {  }
+.p-menu__item.active .p-menu__link{
+    font-weight: 900;
+    color: #EEE;
+}
+
+.p-menu__link {
+    color: #DDD;
+    text-decoration: none;
+    -webkit-transition: 100ms;
+    -moz-transition: 100ms;
+    -ms-transition: 100ms;
+    -o-transition: 100ms;
+    transition: 100ms;
+}
+.p-menu__link:hover {
+    color: white;
+}
+.p-menu__link:active {
+    color: #DDD;
+}
+

@@ -1,0 +1,185 @@
+/* MAIN SLIDER */
+.main-slider-box {
+    border-top: 1px solid #222;
+}
+
+.main-slider-box .swiper-container {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    color: white;
+}
+
+.main-slider-box .swiper-pagination-bullet {
+    background-color: white;
+    border: 2px solid white;
+    opacity: 0.15;
+}
+
+.main-slider-box .swiper-pagination-bullet-active {
+    opacity: 0.4;
+}
+
+.main-banner__item {
+    background-color: black;
+    height: 400px;
+}
+
+/* SLIDE ITEM */
+
+.slide-item {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+
+.slide-item-link {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.slide-item__cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin-left: 500px;
+    -webkit-transition: all 400ms ease-out 200ms; -moz-transition: all 400ms ease-out 200ms; -ms-transition: all 400ms ease-out 200ms; -o-transition: all 400ms ease-out 200ms; transition: all 400ms ease-out 200ms;
+}
+
+.slide-item__cover_activate {
+    opacity: 0.7;
+    margin-left: 0;
+}
+.slide-item__cover_activate .fa-cog {
+    font-size: 80em;
+    color: #222;
+    position: absolute;
+    margin-top: -800px;
+    /*will-change: transform;*/
+    animation: spin_slow 120s infinite linear;
+}
+.slide-item__cover img {
+    position: absolute;
+    animation: spin_slow 120s infinite linear;
+}
+
+.slide-item__title {
+    position: relative;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 600px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5em;
+    font-weight: 900;
+    text-align: left;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-out 100ms; -moz-transition: all 300ms ease-out 100ms; -ms-transition: all 300ms ease-out 100ms; -o-transition: all 300ms ease-out 100ms; transition: all 300ms ease-out 100ms;
+}
+
+.slide-item__title_activate {
+    opacity: 1;
+    margin-left: 0;
+}
+
+.slide-item__description {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 110px;
+    margin-left: 80px;
+    max-width: 300px;
+    color: #BBB;
+    font-family: 'Lora', "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-style: italic;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-out 200ms; -moz-transition: all 300ms ease-out 200ms; -ms-transition: all 300ms ease-out 200ms; -o-transition: all 300ms ease-out 200ms; transition: all 300ms ease-out 200ms;
+}
+
+.slide-item__description_activate {
+    opacity: 1;
+    margin-left: 50px;
+}
+
+
+@media (max-width: 800px) {
+    .slide-item__title {
+        display: block;
+        font-size: 2em;
+        padding-top: 60px;
+        margin-top: 0;
+        text-align: center;
+    }
+    .slide-item__description {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 400px) {
+    .slide-item__description {
+        margin: 30px auto 0 auto;
+        padding: 0 20px;
+        /*text-align: center;*/
+    }
+}
+
+@media (max-width: 300px) {
+    .slide-item__title {
+        font-size: 1.5em;
+    }
+    .slide-item__description {
+        font-size: 0.9em;
+    }
+}
+
+
+@keyframes spin_slow {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+}
+
+/* SLIDE 01 - Комплексная поддержка сайтов */
+.slide-item_01 {
+
+}
+.slide-item_01 .slide-item__cover img {
+    margin-left: -450px;
+    margin-top: -1000px;
+    width: 1500px;
+    height: 1500px;
+    filter: invert(15%);
+}
+
+/* SLIDE 02 - Разработка сайтов */
+
+.slide-item_02 .slide-item__cover {
+    background: radial-gradient(circle farthest-corner at 700px 200px, #002540, #000);
+}
+.slide-item_02 .slide-item__cover img {
+    margin-left: -600px;
+    margin-top: -300px;
+    width: 900px;
+    height: 900px;
+}
+
+/* SLIDE 03 - Фирменный стиль */
+.slide-item_03 .slide-item__cover {
+    background: radial-gradient(circle farthest-corner at 700px 200px, #ca0000, #ff7100);
+    /*background-color: green;*/
+}
+.slide-item_03 .slide-item__cover img {
+    margin-left: -610px;
+    margin-top: -300px;
+    width: 2100px;
+    height: 2100px;
+}
+
+.slide-item_03 .slide-item__title {
+
+}
